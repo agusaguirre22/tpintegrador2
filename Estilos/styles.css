@@ -1,0 +1,148 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+.menu
+{
+    background: #333;
+}
+
+.btn-menu
+{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.nav-link
+{
+    color: #FFF;
+}
+
+.logo
+{
+    width: 50px;
+    height: 50px;
+}
+
+.encabezado{
+background-image: url("./Imagenes/ba1.jpg");
+background-size: cover;
+filter: brightness(50%);
+position: absolute;
+height: 100vh;
+}
+
+.card-img-overlay{
+    margin-top: 0%;
+    padding: 24% 6% 0% 50%;
+    text-align: right;
+    color: white;
+    font-size: 2vh;
+    filter: brightness(150%);
+    position: relative;
+
+}
+
+.titulo{
+    margin-top: 20%;
+    display:flex;
+    justify-content: center;
+}
+
+.tituloSegundo{
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    line-height: 0em;
+    font-weight:600;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-top: 3vh;
+}
+
+.etiqueta{
+    color: white;
+}
+
+.parrafo{
+    margin-top: 8vh;
+    display: inline-block;
+}
+
+.col-6{
+    background-color: #333;
+}
+
+.texto{
+    color: white;
+}
+
+.btn{
+   margin-left: 3vh;
+    }
+
+.subtitulo{
+    display:flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.subtituloSegundo{
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    line-height: 0em;
+    font-weight:600;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+
+}
+
+.formulario{
+ margin-left: 10vh;
+ margin-right: 10vh;
+ margin-top: 3vh;
+}
+
+.form-floating{
+    margin-top: 3vh;
+}
+
+.boton{
+        text-decoration:none;
+        font-weight:600;
+        font-size:20px;
+        text-align: center;
+        padding-top:15px;
+        padding-bottom:15px;
+        padding-left:150px;
+        padding-right:150px;
+        background-color: #a9e159;
+        border-radius:10px;
+        border: none;
+        }
+
+.button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.final{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: #1E5373;
+    border: 100vh;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Secciones/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Codo a Codo</title>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../Imagenes/codoacodo.png" alt="Logo" width="100" height="60" class="d-inline-block ">
+            <span class="text-light">Conf Bs As</span>
+          </a>
+            <button class="navbar-toggler btn-menu" id="btn-menu" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./Secciones/la conferencia.html"><span class="text-secondary">La conferencia</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Secciones/Los oradores.html"><span class="text-secondary">Los oradores</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Secciones/El lugar y la fecha.html"><span class="text-secondary">El lugar y la fecha</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Secciones/Conviertete.html"><span class="text-secondary">Conviertete en orador</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Secciones/Tickets.html"><span class="text-success">Comprar tickets</span></a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>          
+</header>
+
+<main>
+<div class="grilla">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card text-center border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Estudiante</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text">80%</p>
+          <p class="text-secondary">*presentar documentacion</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card text-center border-success mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Trainee</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text">50%</p>
+          <p class="text-secondary">*presentar documentacion</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card text-center border-warning mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text">15%</p>
+          <p class="text-secondary">*presentar documentacion</p>
+        </div>
+  </div>
+</div>
+</main>
+<section>
+  <div class="titulo">
+    <p>VENTA</p>
+  </div> 
+  <div class="tituloSegundo">
+   <p>VALOR DEL TICKET $200</p>
+  </div>
+</section>
+<section class="formulario">
+  <div class="container" id="form">
+    <form id="myForm">
+      <div class="nombre">
+        <div class="row">
+          <div class="col">
+            <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" id="Apellido" class="form-control" placeholder="Apellido">
+          </div>
+        </div>
+      </div>
+      <div class="correo">
+            <div class="row">
+              <div class="col">
+                <input type="email" class="form-control" id="Email" placeholder="Correo">
+            </div>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col">
+            <label for="inputEmail">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" placeholder="cantidad">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Categoría</label>
+            <select id="categoria" class="form-control">
+              <option value="200">Seleccionar...</option>
+              <option value="40">Estudiante</option>
+              <option value="100">Trainee</option>
+              <option value="170">Junior</option>
+            </select>
+          </div>
+        </div>  
+            <div class="alert alert-primary" role="alert" id="precioFinal">
+        </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="boton">
+            <button class="button" onclick="limpiarFormulario()" type="button">Borrar</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="boton">
+            <button class="button" id="Resumen" type="button">Resumen</button>
+          </div>
+        </div>
+      </div>
+      </form>    
+  </div>
+  <div>
+    <p id="MensajeNombre" class="text-success"></p>
+    <p id="MensajeApellido" class="text-success"></p>
+    <p id="MensajeEmail" class="text-success"></p>
+    <p id="MensajeCantidad" class="text-success"></p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="final">
+    <nav class="navbar">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="./Secciones/PreguntasFrecuentes.html"><span class="text light">Preguntas Frecuentes</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/Contacto.html"><span class="text-light">Contactanos</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/Prensa.html"><span class="text-light">Prensa</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/Conferencias.html"><span class="text-light">Conferencias</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/TerminosYcondiciones.html"><span class="text-light">Terminos y Condiciones</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/Privacidad.html"><span class="text-light">Privacidad</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Secciones/Estudiantes.html"><span class="text-light">Estudiantes</span></a></li>
+          </ul>
+    </nav>
+</footer>
+
+<script src="./scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

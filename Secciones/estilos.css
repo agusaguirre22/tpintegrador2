@@ -1,0 +1,71 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.grilla{
+    margin-top: 20vh;
+    margin-left: 17%;
+    display: flex;
+    justify-content: center;
+}
+
+.final{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: #1E5373;
+    border: 100vh;
+}
+
+
+.titulo{
+    display:flex;
+    justify-content: center;
+}
+
+.tituloSegundo{
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    line-height: 0em;
+    font-weight:600;
+}
+
+
+.etiqueta{
+    background-color: cadetblue;
+    font-size: 3vh;
+    border: none;
+    font-weight: lighter;
+}
+
+.correo{
+    margin-top: 3vh;
+}
+
+.nombre{
+    margin-top: 2vh;
+}
+
+.boton{
+    text-decoration:none;
+    font-size:20px;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color: #a9e159;
+    border-radius:10px;
+    border: none;
+    color: white;
+    
+}
+
+
+.button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
